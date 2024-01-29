@@ -1,0 +1,4 @@
+def reverse_string(s):
+    print(s[::-1])
+my_string=["h","e","l","l","o"]
+reverse_string(my_string)

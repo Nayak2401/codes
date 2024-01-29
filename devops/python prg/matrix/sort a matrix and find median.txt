@@ -1,0 +1,22 @@
+def sortmatrix(matrix,r,c):
+    flated_value=[matrix[i][j] for i in range (r) for j in range (c)]
+    flated_value.sort()
+    print(flated_value)
+    median=(r*c-1)//2
+    med=flated_value[median]
+    return med
+r=3
+c=3
+m=[
+    [3,4,5],
+    [2,1,6],
+    [7,9,8]
+]
+output=sortmatrix(m,r,c)
+print(output)
+
+To find the median of a row-wise sorted matrix, you can follow these steps:
+
+Flatten the matrix into a 1D array.
+Sort the array.
+Find the middle element, which is the median.

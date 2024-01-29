@@ -1,0 +1,10 @@
+def print_duplicates(s):
+    char_count={}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    for char, count in char_count.items():
+        if count > 1:
+            print(f"{char}, count = {count}")
+input_string= "narayana"
+print_duplicates(input_string)
+
